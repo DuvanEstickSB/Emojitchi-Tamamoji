@@ -84,7 +84,7 @@ btnNombre.addEventListener("click", () => {
         setTimeout(() => {
             UsarAcciones = true;
             emoji.textContent = "😃";
-        }, 60000);
+        }, 3000);
 
         setInterval(() => {
             if (UsarAcciones) {
@@ -94,11 +94,17 @@ btnNombre.addEventListener("click", () => {
                 Salud = limitar(Salud - 1);
                 actuBarras();
                 actuEmoji();
+            }
+        }, 5000);
+
+        setInterval(() => {
+            if (UsarAcciones) {
                 Tiempovida++;
                 tiempoVida.textContent = `${Math.floor(Tiempovida / 60)} minutos de vida`;
             }
-        }, 3000 );
-    }
+        }, 1000);
+    }   
+
 });
 
 jugar.addEventListener("click", () => {
