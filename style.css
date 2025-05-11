@@ -1,0 +1,141 @@
+body{
+    background: white;
+    font-family: monospace;
+    margin-top: 20px;
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    user-select: none;
+}
+
+main{
+    border-radius: 20px;
+    margin: auto;
+}
+
+.contenedor-nom-vida{
+    margin-bottom: 10px;
+}
+
+.contenedor-acciones{
+    margin-bottom: 20px;
+}
+
+.contenedor-nom-input{
+    margin-bottom: 2px;
+}   
+#emoji{
+    margin: 20px 0;
+    font-size: 200px;
+}
+
+.contenedor-dinero{
+    margin: 10px auto;
+    width: 60%;
+    padding: 8px 12px;
+}
+.contenedor-acciones-botones{
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 60%;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.contenedor-estadisticas{
+    margin-top: 10px;
+    padding: 2px;
+    width: 100%;
+}
+
+.contenedor-estadisticas>div{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.barra-estadistica span{
+    width: 100px;
+    text-align: left;
+    font-size: large;
+}
+
+#insertar-nombre{
+    padding: 20px;
+    width: 30%;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn-nombre{
+    background-color: white ;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#btn-nombre:hover{
+    background-color: #aaa;
+
+}
+
+.barra-estadistica{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 80%;
+    font-style: bold;
+}
+
+.barra{
+    height: 20px;
+    width: 100%;
+    background-color: greenyellow;
+    border-radius: 50px;
+    margin-left: 10px;  
+}
+
+.btn-jugar, 
+.btn-limpiar, 
+.btn-chambear,
+#btn-medicina,
+#btn-chatarra,
+#btn-saludable{
+    background: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+
+
+button {
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 13px;
+
+    /* Posición del tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* encima del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+button:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
