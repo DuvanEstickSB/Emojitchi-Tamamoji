@@ -1,2 +1,2 @@
-# Emojitchi---Tamamoji
+# Emojitchi-Tamamoji
 Tamagochi with emojis (Emojitchi)
