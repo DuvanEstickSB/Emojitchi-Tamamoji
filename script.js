@@ -49,7 +49,9 @@ function actuEmoji() {
         Comida <= 0 ||
         Alegria <= 0 || 
         Higiene <= 0) {
-        emoji.textContent = "😵"; 
+        emoji.textContent = "😵";
+        alert("TU EMOJI A MUERTO");
+        location.reload();
 
     } else if (Salud < 30) {
         emoji.textContent = "🤢";
